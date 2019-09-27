@@ -1,0 +1,123 @@
+body {
+    background-color: #3798c5;
+}
+
+.container {
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.todos-box {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: #095775;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.title-box {
+    padding: 0.2rem 1rem 0.5rem 1rem;
+}
+
+.title-box .title {
+    text-align: center;
+    color: #e5e5e5;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+input[type="text"] {
+    height: 30px;
+    border: none;
+    font-size: 22px;
+    padding: 5px 10px;
+    background-color: #3798c5;
+    color: #e5e5e5;
+    outline: none;
+}
+input[type="text"]::placeholder {
+    font-style: italic;
+    color: #e5e5e5;
+}
+
+.todo-body {
+    min-height: 50px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+    padding: 5px 10px;
+    /* width: 49.31%; */
+    border: none;
+    background-color: #4a4e4bf8;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-box .remove-btn:hover {
+    background-color: #a00f0f;
+    transition: 0.3s;
+}
+
+.btn-box .create-btn:hover {
+    background-color: #13c213;
+    transition: 0.3s;
+}
+.note-btn-container {
+    position: relative;
+}
+.delete-btn {
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    border: 0.1px solid #095775;
+    border-radius: 50%;
+    outline: none;
+    background-color: #3798c5;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    /* line-height: 15px; */
+    font-size: 10px;
+    color: #095775;
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.delete-btn:hover {
+    background-color: #ff0f1f; 
+    color: #ffffff;
+    border-color: #e00f0f;
+    box-shadow: 0 0 5px 0 #e00f0f;
+    transition: 0.4s;
+}
+.todo-text {
+    margin: 5px 0;
+    display: block;
+    font-size: 22px;
+    padding: 8px 20px 0px 28px;
+    border-left: 6px solid #050653;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 30px;
+    border: none;
+    font-size: 1.3rem;
+    background-color: #2778c5;
+    color: #e5e5e5;
+    outline: none;
+}
+.checkbox {
+    position: absolute;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+}
